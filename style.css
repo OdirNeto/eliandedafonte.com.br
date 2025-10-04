@@ -1,0 +1,217 @@
+
+body{
+    background-image: url(ASSETS/Leao15a.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header{
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+picture img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid rgb(1, 1, 1);
+}
+
+#nomePessoa{
+
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin: 10px auto;   /* auto nas laterais centraliza o bloco */
+    
+    background-color: #ffecdd77;
+    border-radius: 31px;
+    width: 80%;          /* ← Largura relativa */
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    
+
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 80px;
+    padding: 0;
+}
+
+ul li{
+    position: relative;
+    display: flex;
+    background-color: #ffecddbb;
+    border-radius: 31px;
+    margin: 15px auto;
+    width: 80%;          /* ← Largura relativa */
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 3px 10px;
+    border: 2px solid transparent;  /* borda sempre presente */
+
+    transition: background 0.3s, border 0.3s;
+}
+
+ul li:hover{
+    background-color: #ffecdd;
+    border: 2px solid #6d5e53;
+    filter: drop-shadow(4x 4px 8px #5a4333); /* Sombra suave ao redor do botão */
+}
+
+
+ul li a{
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: black;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+
+.img_lista, #logoWhats{
+    flex-shrink: 0;
+    left: 5px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    object-fit: cover;
+    
+}
+
+#logoWhats{
+   
+    font-size: 50px;
+    color: #7b6662;
+    object-fit: contain;
+}
+
+#social-links{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    font-size: 50px;
+}
+
+#social-links a{
+    color: #6d5e53;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: auto 15px;
+
+    background: #ffecdd66;
+    border: 1px solid #ffecddaa;  /* borda sempre presente */
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+#social-links a:hover{
+    background: #ffecdd;
+    /*border: 1px solid #6d5e53;*/   /* borda circular */
+    border-radius: 50%;
+    
+}
+
+
+footer{
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    #fotoPessoa img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid rgb(1, 1, 1);
+    }    
+
+    #nomePessoa{
+        font-size: 25px;
+        width: 90%;
+        max-width: 300px;
+        padding: 5px 10px;
+    }
+
+    #links ul {
+        padding: 0;
+        margin: 80px auto;
+    }
+
+    #links li {
+        display: flex;
+        align-items: center; /* centraliza verticalmente */
+        text-align: center;
+        width: 90%;
+        flex-wrap: wrap; /* permite quebrar linha se o texto for grande */
+        margin-bottom: 5px; /* ↓ deixa as listas mais próximas */
+        padding: 2px 10px;   /* ↓ menos espaço interno */
+        box-sizing: border-box; /* garante que padding não aumente altura */
+        
+    }
+
+    #links li img, #logoWhats {
+        flex-shrink: 0; /* impede a imagem de encolher */
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin: 0 10px 0 0; /* só margem direita para o texto */
+        object-fit: cover;
+    }
+
+    #links li a {
+        font-size: 12px; /* fonte legível no mobile */
+        font-weight: bold;
+        line-height: 1.4;
+        padding: 3px 0;  /* ↓ reduz espaçamento vertical dentro do link */
+        flex: 1; /* faz o link ocupar o espaço restante */
+        display: flex;
+        align-items: center; /* centraliza o texto verticalmente em relação à imagem */
+    }
+
+    #social-links{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    #social-links a {
+        color: #6d5e53;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: auto 15px  
+    }
+}
